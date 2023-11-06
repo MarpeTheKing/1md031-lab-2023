@@ -1,0 +1,77 @@
+/* Your comment goes here */
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
+
+
+
+body {
+    font-family: arial;
+ }
+
+.extra{
+    color: #6d6865;
+}
+#idtest{
+    color: #cb7575;
+    font-weight: bold;
+}
+#BurgerChooser{
+    background-color: #000000;
+    color: aliceblue;
+}
+button:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+ }
+
+ section {
+    margin: 50px;
+    margin-bottom: 20px;
+    border-style: dotted;
+ }
+ 
+ button {
+    margin: 20px;
+    margin-left: 5em;
+ }
+ .Wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+ }
+ .box{
+    padding-left: 45px;
+ }
+ .a{
+    grid-column: 1;
+ }
+ .b{
+    grid-column: 2;
+ }
+ .c{
+    grid-column: 3;
+ }
+ 
+ p,h2,h3 {
+    margin-left: 20px;
+ }
+ 
+.headers{
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 360px;
+    overflow:hidden;
+
+ }
+
+.headers img{
+    opacity: 65%;
+}
+.headers h1{
+    position: absolute;
+    margin-top: -7em;
+}
+
+
+
+

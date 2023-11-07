@@ -53,6 +53,7 @@ button:hover {
  }
  .box{
     padding-left: 45px;
+    padding-right: 45px;
  }
  .a{
     grid-column: 1;

@@ -1,7 +1,19 @@
 /* Your comment goes here */
 @import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
 
+header{
+   background-image: url(https://i.pinimg.com/originals/ba/52/bc/ba52bc2a53b48881279601c3dbe3ef37.jpg);
+   background-size: cover;
+   overflow:hidden;
+   width: 97%;
+   height: 200px;
+   margin-bottom: -2em;
 
+}
+header h1{
+   text-align: center;
+   margin-left: 50px;
+}
 
 body {
     font-family: arial;
@@ -28,6 +40,7 @@ button:hover {
     margin-bottom: 20px;
     border-style: dotted;
  }
+
  
  button {
     margin: 20px;
@@ -51,26 +64,11 @@ button:hover {
     grid-column: 3;
  }
  
- p,h2,h3 {
+ p,h2,h3,header {
     margin-left: 20px;
  }
- 
-.headers{
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
-    height: 360px;
-    overflow:hidden;
 
- }
 
-.headers img{
-    opacity: 65%;
-}
-.headers h1{
-    position: absolute;
-    margin-top: -7em;
-}
 
 
 

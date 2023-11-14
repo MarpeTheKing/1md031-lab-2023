@@ -1,27 +1,44 @@
 <template>
     <div id="orders">
       <div id="orderList">
-        <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+        <div v-for="(order, key, index) in orders" v-bind:key="'order'">
+          #{{index + 1}}:
+
+          <span v-for="(value,b) in order.orderItems" id="bOrder">
+          {{b}} ({{value}}), 
+          </span>
+          <br>
+          <span id="printer">
+          {{order.personalInfo.name}} ({{order.personalInfo.email}}, {{order.personalInfo.rcp}}, {{order.personalInfo.gender}})
+          </span>
+          <hr>
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
       <div id="dots" v-bind:style="{ background: 'url(' + require('../../public/img/polacks.jpg')+ ')' }">
-          <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
-            {{ key }}
+          <div v-for="(order, key, index) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
+            {{index+1}}
           </div>
       </div>
     </div>
   </template>
+
+
+
+
+
   <script>
-  import io from 'socket.io-client'
+  import { objectToString } from '@vue/shared';
+import io from 'socket.io-client'
   const socket = io();
+  
   
   export default {
     name: 'DispatcherView',
     data: function () {
       return {
-        orders: null
+        orders: null,
+        count: 0
       }
     },
     created: function () {
@@ -31,9 +48,14 @@
     methods: {
       clearQueue: function () {
         socket.emit('clearQueue');
+      },
+      test: function(){
+        this.count++;
+        console.log(this.count);
       }
     }
   }
+
   </script>
   <style>
   #orderList {
@@ -64,5 +86,12 @@
     height:20px;
     text-align: center;
   }
+  #bOrder{
+  }
+  #printer{
+    font-style: italic;
+    font-size: 0.9em;
+  }
+
   </style>
   

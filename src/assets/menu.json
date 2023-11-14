@@ -1,0 +1,23 @@
+[
+    {
+      "name": "The maka maka",
+      "kCal": 300,
+      "lactose": true,
+      "gluten": false,
+      "img": "https://cdn.pixabay.com/photo/2012/04/13/01/51/hamburger-31775_1280.png"
+    },
+    {
+        "name": "The taka taka",
+        "kCal": 400,
+        "lactose": false,
+        "gluten": true,
+        "img": "https://cdn.pixabay.com/photo/2016/06/29/18/46/burger-1487481_1280.png"
+      },{
+        "name": "The laka laka",
+        "kCal": 500,
+        "lactose": true,
+        "gluten": true,
+        "img": "https://media.istockphoto.com/id/1395272240/sv/vektor/hamburger-a-large-hamburger-with-a-cutlet-tomatoes-cucumbers-and-cheese-big-mac-fast-food.jpg?s=1024x1024&w=is&k=20&c=XTE7T0YEusK0aaHfKANiNqdlkeifiux55prDcPPgJMo="
+      }
+  ]
+  

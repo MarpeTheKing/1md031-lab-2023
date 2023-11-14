@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+    <!-- Your comment goes here -->
+       <title>Burger Order</title>
+       <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+    <header>
+        <h1> Welcome to the burgerWeb </h1>
+    </header>
+    <main>
+    <section class="extra" id="BurgerChooser">
+        <h2> Select you burger of choice</h2>
+            <p>Here you choose your burger</p>
+        <div class="Wrapper">
+            <div class="box a">
+                <h3>Burger 1</h3>
+                <img src="https://cdn.pixabay.com/photo/2012/04/13/01/51/hamburger-31775_1280.png" alt="Span" title="Another in-line element" style="width: 200px;">
+                <ul>
+                    <li>Bread <span id="idtest"> (gluten)</span></li>
+                    <li>Meat</li>
+                    <li>Salad</li>
+                    <li>Pickles</li>
+                    <li>Tomato</li>
+                    <li>Cheese</li>
+                </ul>
+                </div>
+                <div class="box b">
+                <h3>Burger 2</h3>
+                <img src="https://cdn.pixabay.com/photo/2016/06/29/18/46/burger-1487481_1280.png" alt="Span" title="Another in-line element" style="width: 200px;">
+                <ul>
+                    <li>Bread<span id="idtest"> (Gluten)</span></li>
+                    <li>Meat</li>
+                    <li>Salad</li>
+                    <li>Fork</li>
+                    <li>Knife</li>
+                    <li>Chef hat <span id="idtest"> (Lactose)</span></li>
+                    <li>Tomato</li>
+                </ul>
+                </div>
+                <div class="box">
+                <h3>Burger 3</h3>
+                <img src="https://media.istockphoto.com/id/1395272240/sv/vektor/hamburger-a-large-hamburger-with-a-cutlet-tomatoes-cucumbers-and-cheese-big-mac-fast-food.jpg?s=1024x1024&w=is&k=20&c=XTE7T0YEusK0aaHfKANiNqdlkeifiux55prDcPPgJMo=" alt="Span" title="Another in-line element" style="width: 200px;">
+                <ul>
+                    <li>Bread</li>
+                    <li>Meat<span id="idtest"> (maybe??)</span></li>
+                    <li>tomato</li>
+                    <li>Pickles</li>
+                    <li>Cheese</li>
+                    <li>More cheese <span id="idtest">(Not lactose)</span></li>
+                </ul>
+                </div>
+        </div>
+    </section>
+    <section id="PaymentChooser">
+        <h2> Customer information </h3>
+            <p>Here you add the delivery/payment information</p>
+        <h3> Delivery information</h3>
+        <p>
+            <label for="firstlastname">Full name</label><br>
+            <input type="text" id="firstlastname" name="fln" required="required" placeholder="First- and Last name">
+        </p>
+        <p>
+            <label for="email">Email adress</label><br>
+            <input type="email" id="email" name="the_email" required="required" placeholder="Email adress">
+        </p>
+        <p>
+            <label for="street">Street</label><br>
+            <input type="text" id="street" name="the_street" required="required" placeholder="Street name">
+        </p>
+        <p>
+            <label for="houseN">House</label><br>
+            <input type="number" id="houseN" name="the_house" required="required" placeholder="House number">
+        </p>
+        <p>
+            <label for="recipient">Recipient</label><be>
+            <select id="recipient" name="rcp">
+                <option>Cash</option>
+                <option selected="selected">Card</option>     <!-- otherwise, first option is selected -->
+                <option>Swish</option>
+                <option>Credit</option>
+            </select>
+         </p>
+         <!-- <p><textarea name="textarea" id="t1" cols="30" rows="10" maxlength="20"></textarea></p> text area-->
+         <p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="rbutton" value="male" checked="checked"><br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="rbutton" value="female"><br>
+            <label for="dnwta">Do not wish to answer</label>
+            <input type="radio" id="dnwta" name="rbutton" value="donotwish">
+         </p>
+    </section>
+    <button>
+        <img src="https://as2.ftcdn.net/v2/jpg/02/02/78/73/1000_F_202787336_gWqQjarJ6bOSoKe5UBuB69UFoQCP4wjb.jpg" alt="checkButton" style="width: 20px;">
+        Send delivery
+    </button>
+    </main>
+    <footer> <hr> &copy give me a date </footer>
+   </body>
+</html>
